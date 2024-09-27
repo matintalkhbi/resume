@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "vazirmatn";
+        src: local("Vazirmatn-Regular"), url(../font/Vazirmatn-Regular.woff2);
+        font-display: swap;
+    }
+
+
+}
+
+
+@layer utilities{
+    .flex-center{
+        @apply flex items-center justify-center
+    }
+    .ltr-text{
+        direction: ltr;
+        text-align: left;
+    }
+}
